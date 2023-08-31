@@ -34,7 +34,7 @@ public class Exercise1 {
 		//질의
 		Statement st = con.createStatement();
 		ResultSet rs = st.executeQuery(String.format("select %s from %s limit 10", fields, tablename));
-		ResultSetMetaData rsmd = rs.getMetaData();
+		ResultSetMetaData rsmd = rs.getMetaData(); //요게뭐지
 		int count = rsmd.getColumnCount();
 
 		System.out.println("=".repeat(80));
