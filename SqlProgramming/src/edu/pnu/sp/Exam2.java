@@ -21,8 +21,10 @@ public class Exam2 {
 		con.close();
 	}
 	public static void exeProc1(Connection connection) {
-//		try {
-//			
-//		}
+		try {
+			String sql = "CALL nationLanguage03(?,?)";
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
-}
+	}
